@@ -1,5 +1,5 @@
 CREATE TABLE subscribers(
-   id uuid DEFAULT uuid_generate_v4 (),
+   id uuid PRIMARY KEY DEFAULT uuid_generate_v4 (),
    newsletter_id uuid NOT NULL,
    first_name VARCHAR (64),
    last_name VARCHAR (64),
